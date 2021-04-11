@@ -18,7 +18,7 @@ namespace driiver_pdf_api.Controllers
         {
             try
             {
-                return Task.FromResult(json)
+                return Task.FromResult(json);
             } catch(Exception ex)
             {
                 throw new Exception(ex.HelpLink, ex.InnerException);
