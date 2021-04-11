@@ -45,7 +45,11 @@ namespace driiver_pdf_api
             }
 
             app.UseHttpsRedirection();
+            app.UseCors((obj) =>
+            {
+                
 
+            });
             app.UseRouting();
 
             app.UseAuthorization();
