@@ -48,6 +48,15 @@ namespace driiver_pdf_api
                 
             }
 
+            if (env.IsProduction()){
+                app.UseSwagger();
+                app.UseSwaggerUI(s =>
+                {
+                    s.SwaggerEndpoint("/swagger/v1/swagger.json", "driiver_pdf_api  v1");
+                    s.RoutePrefix = string.Empty;
+                });
+            }
+
             app.UseHttpsRedirection();
             app.UseCors((obj) =>
             {
