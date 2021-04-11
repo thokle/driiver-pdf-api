@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>driiver_pdf_api</RootNamespace>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>62dd3e78-c4c3-4bc9-91bb-6f5275efba5d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  driiver-pdf-api:
+    image: ${DOCKER_REGISTRY-}driiverpdfapi
+    build:
+      context: .
+      dockerfile: driiver-pdf-api/Dockerfile
